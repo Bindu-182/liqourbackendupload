@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0; 
+    }
+    
+    .container {
+        max-width: 1190px; 
+        margin: 0 auto;
+        background-color: #ffffff; 
+        padding: 20px; 
+        margin-bottom: 20px;
+        border: 1px solid #dddddd; 
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+    }
+    
+    
+    #profile {
+        background-color: #f4dbf3;
+    }
+    .profile-container {
+        text-align: left;
+        margin-top: 50px;
+        margin-left: 20px;
+        display:grid;
+        grid-template-columns: repeat(3,0.5fr);
+        gap:20px;
+    }
+    
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%; 
+        object-fit: cover; 
+        margin-left: 100px; 
+    }
+    
+    
+    .profile-name {
+        margin-top: 10px; 
+        font-size: 26px;
+        margin-left: 100px;
+    }
+    .nav-buttons { 
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        margin-left: 0 auto; 
+        margin-top: 0 auto;
+    
+        
+    }
+    
+    .profile-button {
+        height:35px;
+        width:200px;
+        margin: 5px 0; 
+        margin-right: 75px;
+        padding: 10px 20px; 
+        font-size: 16px;
+        background-color: #f99fea; 
+        color: #fff; 
+        border: none; 
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .Education-button {
+        height:35px;
+        width:200px;
+        margin: 5px 0; 
+        margin-right: 75px;
+        padding: 10px 20px; 
+        font-size: 16px;
+        background-color: #f99fea; 
+        color: #fff; 
+        border: none; 
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .Experience-button {
+        height:35px;
+        width:200px;
+        margin: 5px 0;
+        margin-right: 75px; 
+        padding: 10px 20px; 
+        font-size: 16px;
+        background-color: #f99fea; 
+        color: #fff; 
+        border: none; 
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .projects-button {
+        height:35px;
+        width:200px;
+        margin: 5px 0; 
+        margin-right: 75px;
+        padding: 10px 20px; 
+        font-size: 16px;
+        background-color: #f99fea; 
+        color: #fff; 
+        border: none; 
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .skills-button {
+        height:35px;
+        width:200px;
+        margin: 5px 0;
+        margin-right: 75px; 
+        padding: 10px 20px; 
+        font-size: 16px;
+        background-color: #f99fea; 
+        color: #fff; 
+        border: none; 
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .socialmedia-button {
+        height:35px;
+        width:200px;
+        margin: 5px 0; 
+        margin-right: 75px;
+        padding: 10px 20px; 
+        font-size: 16px;
+        background-color: #f99fea; 
+        color: #fff; 
+        border: none; 
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .about-info{
+        border-color: black;
+        align-items: center;
+        margin-right: 155px;
+        margin-left: 155px;
+        margin-top:50px;
+       
+    }
+    
+    .about-info p{
+        font-size:19px;
+    }
+    #about{
+        background-color:white;
+    }
+    .Edu {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .Edu b {
+        text-align: left;
+        margin-top: 50px;
+        margin-left: 155px;
+        font-size: 24px;
+    }
+    
+    .rectangle {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin-right: 155px;
+        margin-left: 155px;
+        padding: 10px;
+        border: 1px solid black;
+        flex: 1;
+        overflow: hidden;
+    }
+    
+    .unh,
+    .gitam {
+        flex: 1;
+        margin-right: 20px;
+    }
+    
+    .unh img,
+    .gitam img {
+        max-width: 80px;
+        height: auto;
+    }
+    
+    .unh-text,
+    .gitam-text {
+        flex: 2;
+    }
+    
+    #education {
+        background-color: #f4dbf3;
+    }
+    
+    .Exp{
+        align-items: center;
+        margin-right: 155px;
+        margin-left: 155px;
+        margin-top:50px
+    }
+    .Exp b{
+        font-size: 30px;
+    }
+    .Exp p{
+        font-size:19px;
+    }
+    
+    #experience {
+        background-color: white;
+    }
+    .pro{
+        align-items: center;
+        margin-right: 155px;
+        margin-left: 155px;
+        margin-top:50px
+    }
+    .list-pro{
+        font-size: 19px;
+    }
+    .pro b{
+        text-align: left;
+        margin-top: 50px;
+        margin-left: 155px;
+        font-size: 30px;
+    
+    }
+    
+    #projects {
+        background-color: #f4dbf3;
+    }
+    .skillsname{
+        margin-left:150px;
+    }
+    .Ski {
+        display: flex;
+        justify-content: space-between; 
+        width: 600px; 
+        margin-left: 175px;
+    }
+    
+    
+    .column {
+        width: calc(33.33% - 90px); 
+        
+    }
+    
+    
+    .square {
+        margin-bottom: 20px; 
+        padding: 10px; 
+        height:100px;
+        width: 100px;
+    }
+    
+    
+    .square img {
+        width:40px;
+        height:40px; 
+       
+    }
+    #skills {
+        background-color:  white;
+    }
+    .socialmediaimg{
+        width:40px;
+        height:40px;
+    }
+    .social h2{
+        margin-left: 150px;
+    }
+    .facebook{
+        margin-left:250px;
+        display: flex;
+        text-align: center;
+    }
+    .instagram{
+        margin-left:250px;
+        display: flex;
+        text-align: center;
+    }
+    .telegram{
+        margin-left:250px;
+        display: flex;
+        text-align: center;
+    }
+    .linkedin{
+        margin-left:250px;
+        display: flex;
+        text-align: center;
+    }
+    .link{
+       padding-left:30px;
+    }
+    
+    
+    .text {
+        margin-top: 10px; 
+    }
+    
+    
+    #social-media {
+        background-color: #f4dbf3;
+    }
+    .scroll-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        color: #fff;
+        padding: 10px 15px;
+        border:none;
+        text-decoration: none;
+        
+    }
+    .arrow{
+        height:50px;
+        width:75px;
+        margin-right:150px;
+    }
+    
+    
+    .scroll-to-top:hover {
+        background-color:white;
+    }
+    
+    
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="top"></div>
+
+    <div class="container" id="profile">
+        <div class="profile-container">
+            <div class="profile-info">
+            <img class="profile-photo" src="https://images.unsplash.com/photo-1701830631957-bdd32675c1ba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Nnx8fGVufDB8fHx8fA%3D%3D" alt="My image">
+            <div class="profile-name">
+                Basa Bindu Priya
+            </div>
+            </div>
+    
+        <div class="nav-buttons">
+            <button class="profile-button">Profile</button>
+            <button class="Education-button">Education</button>
+            <button class="Experience-button">Experience</button>
+            <button class="projects-button">Projects</button>
+            <button class="skills-button">Skills</button>
+            <button class="socialmedia-button">Social Media</button>
+        </div>
+        <div class="contact-info">
+            <h1>Contact</h1>
+            <p>phone:+1(475) 287-9701</p>
+            <p>email:bindupriyabasa182@gmail.com</p>
+            <p>address:West Haven, CT</p>
+    
+        </div>
+        </div>
+    </div>
+    <div class="container" id="about">
+        <div class="about-info">
+            <h2>Profile</h2>
+            <p> To obtain a technical engineering position where i can utilize my experience in coding , scripting and big-data related 
+                technology stacks to contribute to the development of cloud services. Profficient in Python and SQL . I have also 
+                done many certifications in udemy such as python , html - css and few other . I am fascinated by what drives the market 
+                and how descisions can be made based on findings that effect companies on large organizations and seek to utilize 
+                my ever expanding skillset and fast learning skills.
+            </p>
+    
+        </div>
+
+    </div>
+
+    <div class="container" id="education">
+        <div class="Edu">
+            <b>Education</b>
+            <div class="rectangle">
+                <div class="unh">
+                    <img src="https://images.unsplash.com/photo-1701830650257-b00a7f26e399?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NHx8fGVufDB8fHx8fA%3D%3D" alt="unh logo">
+                </div>
+                <div class="unh-text">
+                    <h3>Masters in Computer Science and Engineering At University Of New Haven</h3>
+                </div>
+            </div>
+            <div class="rectangle">
+                <div class="gitam">
+                    <img src="https://images.unsplash.com/photo-1701827510329-c5996b40d439?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Nnx8fGVufDB8fHx8fA%3D%3D" alt="gitam logo">
+                </div>
+                <div class="gitam-text">
+                    <h3>Bachelores in Computer Science And Engineering at GITAM University Hyderabad</h3>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="container" id="experience">
+        <div class="Exp">
+            <h2>Experience</h2>
+            <p> Worked as Infra Stability Engineer at Invesco Asset Managment , India
+            </p>
+    
+        </div>
+    </div>
+
+    <div class="container" id="projects">
+        <div class="pro">
+            <h2>Projects</h2>
+            <ol class="list-pro">
+                <li type="bullet">Design Secure and Efficient Biometric- Based secure Access mechanism for cloud</li>
+                <li type="bullet">Cardio Vascular Disease Prediction using Supervised learning</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="container" id="skills">
+        <div class="skillsname">
+            <h2>Skills</h2>
+        </div>
+        <div class="Ski">
+            
+            <div class="column">
+                
+                <div class="square">
+                    <img src="https://images.unsplash.com/photo-1701830682699-9d8849df3efe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8fA%3D%3D" alt="Image 1">
+                    <h5><p class="text">SQL & DB</p></h5>
+                </div>
+                <div class="square">
+                    <img src="https://images.unsplash.com/photo-1701827516354-c26916552282?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8M3x8fGVufDB8fHx8fA%3D%3D" alt="Image 2">
+                    <h5><p class="text">HTML</p></h5>
+                </div>
+            </div>
+            <div class="column">
+                <div class="square">
+                    <img src="https://images.unsplash.com/photo-1701827499043-f0ad4c7996eb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8fA%3D%3D" alt="Image 3">
+                    <h5><p class="text">CSS</p></h5>
+                </div>
+                <div class="square">
+                    <img src="https://images.unsplash.com/photo-1701827492813-00e841642e64?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8N3x8fGVufDB8fHx8fA%3D%3D" alt="Image 4">
+                    <h5><p class="text">C Language</p></h5>
+                </div>
+            </div>
+            <div class="column">
+                <div class="square">
+                    <img src="https://images.unsplash.com/photo-1701830643120-3faca3be1fcf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8fA%3D%3D" alt="Image 5">
+                    <h5><p class="text">Python</p></h5>
+                </div>
+                <div class="square">
+                    <img src="https://images.unsplash.com/photo-1701827529954-ee7d522a790d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8fA%3D%3D" alt="Image 6">
+                    <h5><p class="text">Java</p></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="social-media">
+        <div class="social">
+            <h2>Social Media</h2>
+            <div class="facebook">
+                <img src="https://images.unsplash.com/photo-1701827504439-f54c45a6cee5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8fA%3D%3D" alt="facebook logo" class="socialmediaimg">
+                <a href="https://www.facebook.com/" class="link" >Link</a>
+            </div>
+            <div class="instagram">
+                <img src="https://images.unsplash.com/photo-1701827524237-4f4a5c634907?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NHx8fGVufDB8fHx8fA%3D%3D" alt="facebook logo" class="socialmediaimg">
+                <a href="https://www.instagram.com/" class="link" >Link</a>
+            </div>
+            <div class="telegram">
+                <img src="https://images.unsplash.com/photo-1701830688812-1c756ecf032a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8fA%3D%3D" alt="facebook logo" class="socialmediaimg">
+                <a href="https://web.telegram.org/k/" class="link" >Link</a>
+            </div>
+            <div class="linkedin">
+                <img src="https://images.unsplash.com/photo-1701830713664-50bbbd0b7c16?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8M3x8fGVufDB8fHx8fA%3D%3D" alt="facebook logo" class="socialmediaimg">
+                <a href="https://www.linkedin.com/feed/" class="link" >Link</a>
+    
+            </div>
+            <div class="totop">
+                <a href="#top" class="scroll-to-top" ><img src="https://images.unsplash.com/photo-1701827029287-84c611576421?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8fA%3D%3D"  class="arrow" alt="arrow"></a>
+    
+            </div>
+            
+    
+    
+    
+        </div>
+    </div>
+    
+</body>
+</html>

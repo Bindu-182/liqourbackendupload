@@ -1,0 +1,15 @@
+[
+  {
+    "_id": "656fb9d798f0f5fb4d2f6ca3",
+    "id": 1,
+    "name": "Whiskey",
+    "brand": "Johnnie Walker",
+    "type": "Scotch",
+    "price": 50.99,
+    "quantity": 10,
+    "dateOfAddition": "2023-01-01",
+    "image": "https://th.bing.com/th/id/R.e30be5965108d6bbace889a2a381392f?rik=aT7oUYpPVAoTYw&pid=ImgRaw&r=0",
+    "alcoholContent": "40%",
+    "description": "Premium Scotch Whiskey with a rich and smoky flavor."
+  }
+]
